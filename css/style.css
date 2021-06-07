@@ -1,0 +1,147 @@
+/*****Import all Stylings*****/
+@import "_header.css";
+
+/*****Global Stylign*****/
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+body{
+    font-family: var(--font_BRCandor);
+}
+:root{
+    /*Primary Colors*/
+    --primary_black: #000000;
+    --primary_purple: #07003B;
+    --primary_blue: #3C50E0;
+    --primary_pink: #FF5670;
+    --primary_yellow: #FDB400;
+    --primary_green: #38C073;
+    --white: #ffffff; 
+    /*Secondary Colors*/
+    --secondary_black_light: #DFDFDF;
+    --secondary_purple_light: #515E81;
+    --secondary_btn_border: #D7DBF8;
+    /*Font Family*/
+    --font_BRCandor: BRCandor;
+}
+.wrap{
+    max-width: 1440px;
+    margin: auto;
+}
+/*****Typography*****/
+
+/*Font Families and Weights*/
+@font-face {
+    font-family: BRCandor;
+    src: url(../fonts/BR-Candor-Light.otf);
+    font-weight: 300;
+}
+@font-face {
+    font-family: BRCandor;
+    src: url(../fonts/BR-Candor-Regular.otf);
+    font-weight: 400;
+}
+@font-face {
+    font-family: BRCandor;
+    src: url(../fonts/BR-Candor-Medium.otf);
+    font-weight: 500;
+}
+@font-face {
+    font-family: BRCandor;
+    src: url(../fonts/BR-Candor-SemiBold.otf);
+    font-weight: 600;
+}
+@font-face {
+    font-family: BRCandor;
+    src: url(../fonts/BR-Candor-Bold.otf);
+    font-weight: 700;
+}
+.display_1, .display_2, .h1, .h2, .h3, .h4,.h5, .h6, .p, .banner_paragraph {
+    font-weight: 600;
+}
+.display_1{
+    font-size: 101px;
+    line-height: 104px;
+}
+.display_2{
+    font-size: 77px;
+    line-height: 86px;
+}
+.h1{
+    font-size: 56px;
+    line-height: 66px;
+}
+.h2{
+    font-size: 42px;
+    line-height: 60px;
+}
+.h3{
+    font-size: 36px;
+    line-height: 50px;
+}
+.h4{
+    font-size: 30px;
+    line-height: 44px;
+}
+.h5{
+    font-size: 24px;
+    line-height: 40px;
+}
+.h6{
+    font-size: 22px;
+    line-height: 34px;
+    font-weight: 500;
+}
+.p{
+    font-size: 18px;
+    line-height: 34px;
+    font-weight: 400px;
+}
+.banner_paragraph{
+    font-size: 20px;
+    line-height: 30px;
+    font-weight: 500px;
+}
+.link{
+    font-weight: 600;
+    text-decoration: none;
+    color: var(--primary_blue);
+}
+.link:hover{
+    text-decoration: underline;
+}
+/*****Buttons*****/
+a.btn{
+    /* min-width: 230px;
+    min-height: 56px; */
+    display: inline-block;
+    text-decoration: none;
+    padding: 15px 27px;
+    background-color: var(--primary_blue);
+    font-size: 15px;
+    font-weight: 600;
+    border-radius: 3px;
+    color: var(--white);
+    border: 2px solid var(--primary_blue);
+}
+a.btn:hover, a.btn:focus{
+    background-color: var(--white);
+    color: var(--primary_blue);
+    border-color: var(--secondary_btn_border);
+}
+/*****Lists*****/
+/*UnOrdered List*/
+ul li{
+    font-size: 18px;
+    font-weight: 400;
+    color: var(--secondary_purple_light);
+}
+/*Ordered List*/
+
+ol li{
+    font-size: 18px;
+    color: var(--secondary_purple_light);
+    list-style-type: decimal-leading-zero;
+}
