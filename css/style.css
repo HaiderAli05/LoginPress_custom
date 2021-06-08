@@ -1,6 +1,6 @@
 /*****Import all Stylings*****/
 @import "_header.css";
-
+@import "_footer.css";
 /*****Global Stylign*****/
 *{
     box-sizing: border-box;
@@ -23,12 +23,19 @@ body{
     --secondary_black_light: #DFDFDF;
     --secondary_purple_light: #515E81;
     --secondary_btn_border: #D7DBF8;
+    --secondary_copyright_bg: #050026;
+    --secondary_copyright_text: #A09FDF;
+    --secondary-pink-light: #F6366A;
     /*Font Family*/
     --font_BRCandor: BRCandor;
 }
 .wrap{
-    max-width: 1440px;
+    max-width: 1470px;
     margin: auto;
+    padding: 0 15px;
+}
+.underline {
+    text-decoration: underline;
 }
 /*****Typography*****/
 
