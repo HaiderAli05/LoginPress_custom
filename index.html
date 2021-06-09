@@ -5,22 +5,28 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <!-- CSS file link -->
     <link rel="stylesheet" href="./css/style.css">
+    <!-- Font Awesome Kit -->
     <script src="https://kit.fontawesome.com/d9c345beed.js" crossorigin="anonymous"></script>
 </head>
 <body>
     <div class="container">
+        <!-- Header -->
         <header class="header">
             <div class="wrap">
+                <!-- Logo -->
                 <div class="brand">
                     <a href="#"><img class="logo"src="./img/loginpress-logo.svg" alt="Login Press logo"></a>
+                    <i class="fas fa-bars" onclick="togglemenu()" id="toggler_bar"></i>
                 </div>
-                <nav class="navbar">
+                <!-- Navbar -->
+                <nav class="navbar" id="navBar">
                     <ul class="nav_menu">
                         <li class="nav_item"><a href="#">Features</a></li>
                         <li class="nav_item"><a href="#">Pricing</a></li>
                         <li class="nav_item"><a href="#">Add-ons</a></li>
-                        <li class="nav_item"><a href="#">Support <i class="fas fa-angle-down"></i></a>
+                        <li class="nav_item"><a href="#" class="has-children">Support <i class="fas fa-angle-down"></i></a>
                             <ul class="sub_menu">
                                 <li class="sub_item">
                                     <a href="#">
@@ -63,7 +69,9 @@
         <main>
 
         </main>
+        <!-- Footer -->
         <footer>
+            <!-- Footer-top -->
             <div class="footer_top">
                 <div class="wrap">
                     <div class="footer_about">
@@ -84,7 +92,7 @@
                         <ul class="support_links">
                             <li class="footer_link"><a href="#" class="link">Documentations</a></li>
                             <li class="footer_link"><a href="#" class="link">FAQ</a></li>
-                            <li class="footer_link"><a href="#" class="link">Contact US</a></li>
+                            <li class="footer_link"><a href="#" class="link">Contact Us</a></li>
                             <li class="footer_link"><a href="#" class="link">My Account</a></li>
                         </ul>
                     </div>
@@ -99,6 +107,7 @@
                     </div>
                 </div>
             </div>
+            <!-- Copyright -->
             <div class="copyright_section">
                 <div class="wrap">
                     <div class="copyright">
@@ -112,5 +121,7 @@
             </div>
         </footer>
     </div>
+    <!-- Custom JavaScript -->
+    <script src="./js/main.js"></script>
 </body>
 </html>
